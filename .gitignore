@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/src/DevJoy.Domain.Kernel/.vs/DevJoy.Domain.Kernel
+/src/DevJoy.Domain.Kernel/DevJoy.Domain.Kernel/obj
+/src/DevJoy.Domain.Kernel/.vs/ProjectEvaluation
+/src/DevJoy.Domain.Kernel/bin/Debug/net8.0
+/src/DevJoy.Domain.Kernel/obj
+/src/DevJoy.Domain.Kernel/bin/Release
