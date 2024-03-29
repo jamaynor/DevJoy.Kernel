@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FA71FE48-BF71-42AA-B585-2D2CA3066ABC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevJoy.Domain.Kernel", "src\DevJoy.Domain.Kernel\DevJoy.Domain.Kernel.csproj", "{7D5A4C36-3192-47E0-A256-433449EF7994}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D5A4C36-3192-47E0-A256-433449EF7994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D5A4C36-3192-47E0-A256-433449EF7994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D5A4C36-3192-47E0-A256-433449EF7994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D5A4C36-3192-47E0-A256-433449EF7994}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D5A4C36-3192-47E0-A256-433449EF7994} = {FA71FE48-BF71-42AA-B585-2D2CA3066ABC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B657A025-96E7-4EA5-A048-DEABFEE5BDD6}
+	EndGlobalSection
+EndGlobal

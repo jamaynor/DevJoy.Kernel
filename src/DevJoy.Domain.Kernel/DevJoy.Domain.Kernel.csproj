@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>DevJoy DDD Kernel</Title>
+		<Authors>Jeremy Maynor</Authors>
+		<GenerateDocumentationFile>False</GenerateDocumentationFile>
+		<AssemblyVersion>1.0.0.3</AssemblyVersion>
+		<PackageVersion>1.0.0.3</PackageVersion>
+	</PropertyGroup>
+
+</Project>
