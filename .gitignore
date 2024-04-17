@@ -9,3 +9,6 @@
 /src/DevJoy.Domain.Kernel/bin/Debug/net8.0
 /src/DevJoy.Domain.Kernel/obj
 /src/DevJoy.Domain.Kernel/bin/Release
+/src/DevJoy.Domain.Kernel/bin/Debug
+/src/DevJoy.Kernel/bin
+/src/DevJoy.Kernel/obj
