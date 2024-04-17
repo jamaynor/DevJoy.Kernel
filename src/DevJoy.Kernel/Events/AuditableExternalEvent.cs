@@ -1,6 +1,4 @@
-﻿
-
-namespace DevJoy.Events
+﻿namespace DevJoy.Events
 {
     public record AuditableExternalEvent : IAuditable, IDomainEvent
     {

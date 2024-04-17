@@ -5,16 +5,17 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<Title>DevJoy DDD Kernel</Title>
+		<Title>DevJoy Kernel</Title>
 		<Authors>Jeremy Maynor</Authors>
 		<GenerateDocumentationFile>False</GenerateDocumentationFile>
-		<AssemblyVersion>1.0.0.3</AssemblyVersion>
+		<AssemblyVersion>0.1.0.0</AssemblyVersion>
 		<PackageVersion>1.0.0.3</PackageVersion>
 		<RootNamespace>DevJoy</RootNamespace>
+		<Company>DevJoy, Ltd.</Company>
+		<Description>Building blocks for domain driven design in .net 8.</Description>
+		<Copyright>All rights reserved.</Copyright>
+		<RepositoryUrl>https://github.com/jamaynor/DevJoy.Kernel</RepositoryUrl>
+		<FileVersion>0.1.0.0</FileVersion>
 	</PropertyGroup>
-
-	<ItemGroup>
-	  <Folder Include="Guard\" />
-	</ItemGroup>
 
 </Project>
