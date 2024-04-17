@@ -10,6 +10,7 @@
 		<GenerateDocumentationFile>False</GenerateDocumentationFile>
 		<AssemblyVersion>1.0.0.3</AssemblyVersion>
 		<PackageVersion>1.0.0.3</PackageVersion>
+		<RootNamespace>DevJoy</RootNamespace>
 	</PropertyGroup>
 
 </Project>

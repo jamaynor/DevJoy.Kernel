@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FA71FE48-BF71-42AA-B585-2D2CA3066ABC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevJoy.Domain.Kernel", "src\DevJoy.Domain.Kernel\DevJoy.Domain.Kernel.csproj", "{7D5A4C36-3192-47E0-A256-433449EF7994}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevJoy.Kernel", "src\DevJoy.Domain.Kernel\DevJoy.Kernel.csproj", "{7D5A4C36-3192-47E0-A256-433449EF7994}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

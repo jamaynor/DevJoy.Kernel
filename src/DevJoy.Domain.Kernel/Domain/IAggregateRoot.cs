@@ -1,4 +1,4 @@
-﻿namespace DevJoy.Domain.Kernel;
+﻿namespace DevJoy.Domain;
 
 /// <summary>
 /// A marker interface denoting that an Entity is an AggregateRoot
