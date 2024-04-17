@@ -1,5 +1,4 @@
-﻿using DevJoy.Domain.Kernel;
-
+﻿
 namespace DevJoy.Domain
 {
     public interface IEntity<TId>

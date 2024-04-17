@@ -13,4 +13,8 @@
 		<RootNamespace>DevJoy</RootNamespace>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <Folder Include="Guard\" />
+	</ItemGroup>
+
 </Project>
