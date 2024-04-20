@@ -17,7 +17,7 @@ namespace DevJoy.Guard
             {
                 if (value is not null && predicate(value))
                 {
-                    throw new ElementFoundException(message ?? $"{value.ToString()} was contained in the {parameterName} collection.");                    
+                    throw new ItemFoundException(message ?? $"{value.ToString()} was contained in the {parameterName} collection.");                    
                 }
             }
         }

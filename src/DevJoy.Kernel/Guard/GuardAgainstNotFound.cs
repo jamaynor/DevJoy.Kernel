@@ -15,7 +15,7 @@ public static class GuardAgainstNotFound
         {
             if (matchFunction(value)) return;
         }
-        throw new ElementNotFoundException(message ?? "The element was not found.");
+        throw new ItemNotFoundException(message ?? "The element was not found.");
     }
 
     public static void KeyNotFound<TKey, TValue>(this IGuardClause guardClause,
