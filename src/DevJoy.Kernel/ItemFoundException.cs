@@ -16,9 +16,5 @@ namespace DevJoy
         public ItemFoundException(string? message, Exception? innerException) : base(message, innerException)
         {
         }
-
-        protected ItemFoundException(SerializationInfo info, StreamingContext context) : base(info, context)
-        {
-        }
     }
 }

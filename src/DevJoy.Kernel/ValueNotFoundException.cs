@@ -16,9 +16,5 @@ namespace DevJoy
         public ValueNotFoundException(string? message, Exception? innerException) : base(message, innerException)
         {
         }
-
-        protected ValueNotFoundException(SerializationInfo info, StreamingContext context) : base(info, context)
-        {
-        }
     }
 }

@@ -2,6 +2,7 @@
 {
     public record AuditableDomainEvent : IAuditable, IDomainEvent
     {
+        public AuditableDomainEvent() { }
         public AuditableDomainEvent(string createdBy, DateTimeOffset createdAt)
         {
             if (string.IsNullOrEmpty(createdBy))

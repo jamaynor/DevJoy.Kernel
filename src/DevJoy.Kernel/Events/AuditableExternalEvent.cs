@@ -2,6 +2,7 @@
 {
     public record AuditableExternalEvent : IAuditable, IDomainEvent
     {
+        public AuditableExternalEvent() { }
         public AuditableExternalEvent(string createdBy, DateTimeOffset createdAt)
         {
             if (string.IsNullOrEmpty(createdBy))
