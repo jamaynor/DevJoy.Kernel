@@ -8,13 +8,13 @@ namespace DevJoy.Domain
     /// </summary>    
     public class Entity<TId> : IEntity<TId>
     {
-        public TId Id { get; init; } = default!;
+        public TId Id { get; protected set; } = default!;
 
-        public long Version { get; set; }
+        public long Version { get; protected set; }
 
-        public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.Now;
+        public DateTimeOffset CreatedAt { get; protected set; } = DateTimeOffset.Now;
 
-        public DateTimeOffset UpdatedAt { get; set; } = DateTimeOffset.Now;
+        public DateTimeOffset UpdatedAt { get; protected set; } = DateTimeOffset.Now;
     }
 
     /// <summary>

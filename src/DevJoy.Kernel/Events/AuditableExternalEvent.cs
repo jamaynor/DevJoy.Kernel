@@ -1,20 +1,17 @@
 ﻿namespace DevJoy.Events
 {
-    public record AuditableExternalEvent : IAuditable, IDomainEvent
+    public record AuditableExternalEvent<TUserId> : IExternalEvent<TUserId>
     {
         public AuditableExternalEvent() { }
-        public AuditableExternalEvent(string createdBy, DateTimeOffset createdAt)
+        public AuditableExternalEvent(TUserId createdBy, DateTimeOffset createdAt)
         {
-            if (string.IsNullOrEmpty(createdBy))
-            {
-                throw new ArgumentException("Value cannot be null or empty.", nameof(createdBy));
-            }
+
 
             CreatedBy = createdBy;
             CreatedAt = createdAt;
         }
 
-        public string CreatedBy { get; init; } = string.Empty;
+        public TUserId CreatedBy { get; init; } = default!;
         public DateTimeOffset CreatedAt { get; init; }
     }
 }

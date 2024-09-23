@@ -1,20 +1,26 @@
 ﻿namespace DevJoy.Events
 {
-    public record AuditableDomainEvent : IAuditable, IDomainEvent
+    public record AuditableDomainEvent<TUserId> : IDomainEvent<TUserId>
     {
         public AuditableDomainEvent() { }
-        public AuditableDomainEvent(string createdBy, DateTimeOffset createdAt)
+        public AuditableDomainEvent(TUserId createdBy, DateTimeOffset createdAt)
         {
-            if (string.IsNullOrEmpty(createdBy))
+            if (EqualityComparer<TUserId>.Default.Equals(createdBy, default))
             {
-                throw new ArgumentException("Value cannot be null or empty.", nameof(createdBy));
+                throw new ArgumentException("CreatedBy cannot be default", nameof(createdBy));
+            }
+
+            if (createdAt == DateTimeOffset.MaxValue
+             || createdAt == DateTimeOffset.MinValue)
+            {
+                throw new ArgumentException("CreatedAt cannot be default", nameof(createdAt));
             }
 
             CreatedBy = createdBy;
             CreatedAt = createdAt;
         }
 
-        public string CreatedBy { get; init; } = string.Empty;
+        public TUserId CreatedBy { get; init; } = default!;
         public DateTimeOffset CreatedAt { get; init; }
     }
 }
