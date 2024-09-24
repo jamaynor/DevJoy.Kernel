@@ -14,7 +14,7 @@ public static class GuardAgainstNotFound
         {
             if (matchFunction(value)) return;
         }
-        throw new ItemNotFoundException(message ?? "The element was not found.");
+        throw new ArgumentException(message ?? "The element was not found.");
     }
 
     public static void KeyNotFound<TKey, TValue>(this IGuardClause guardClause,
@@ -43,7 +43,7 @@ public static class GuardAgainstNotFound
         {
             if (predicate(value)) return;
         }
-        throw new ValueNotFoundException(message ?? $"The value was not found.");
+        throw new ArgumentException(message ?? $"The value was not found.");
     }
 }
 

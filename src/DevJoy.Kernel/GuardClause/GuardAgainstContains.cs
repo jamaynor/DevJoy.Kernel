@@ -17,8 +17,23 @@ namespace DevJoy.GuardClause
             {
                 if (value is not null && predicate(value))
                 {
-                    throw new ItemFoundException(message ?? $"{value.ToString()} was contained in the {parameterName} collection.");
+                    throw new ArgumentException(message ?? $"{value.ToString()} was contained in the {parameterName} collection.");
                 }
+            }
+        }
+
+        public static void DoesNotContain<T>(this IGuardClause guardClause,
+                                            IEnumerable<T> collection,
+                                            Func<T, bool> predicate,
+                                            string? message = null,
+                                            [CallerArgumentExpression("collection")] string? parameterName = null)
+        {
+            Guard.Against.Null(predicate, message);
+            Guard.Against.NullOrEmpty(collection, message);
+
+            if (!(collection.Any(item => predicate(item))))
+            {
+                throw new ArgumentException(message ?? $"The collection did not contain the {parameterName}.");
             }
         }
 
@@ -33,7 +48,7 @@ namespace DevJoy.GuardClause
             
             if (sourceString.Contains(subString))
             {
-                throw new ItemFoundException(message ?? $"{subString} was contained in the {parameterName} string.");
+                throw new ArgumentException(message ?? $"{subString} was contained in the {parameterName} string.");
             }
         }
         public static void DoesNotContain(this IGuardClause guardClause,
@@ -47,7 +62,7 @@ namespace DevJoy.GuardClause
 
             if (!sourceString.Contains(subString))
             {
-                throw new ItemNotFoundException(message ?? $"{subString} was not contained in the {parameterName} string.");
+                throw new ArgumentException(message ?? $"{subString} was not contained in the {parameterName} string.");
             }
         }
 

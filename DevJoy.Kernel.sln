@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FA71FE48-BF7
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevJoy.Kernel", "src\DevJoy.Kernel\DevJoy.Kernel.csproj", "{7BE0A4CF-6190-4263-A702-332AD71125DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevJoy.Kernel.Test", "test\DevJoy.Jernet.Test\DevJoy.Kernel.Test.csproj", "{886F4CE3-8821-4BFC-8770-A2F0F22C125E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{7BE0A4CF-6190-4263-A702-332AD71125DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BE0A4CF-6190-4263-A702-332AD71125DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BE0A4CF-6190-4263-A702-332AD71125DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{886F4CE3-8821-4BFC-8770-A2F0F22C125E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886F4CE3-8821-4BFC-8770-A2F0F22C125E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886F4CE3-8821-4BFC-8770-A2F0F22C125E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886F4CE3-8821-4BFC-8770-A2F0F22C125E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7BE0A4CF-6190-4263-A702-332AD71125DA} = {FA71FE48-BF71-42AA-B585-2D2CA3066ABC}
+		{886F4CE3-8821-4BFC-8770-A2F0F22C125E} = {FA71FE48-BF71-42AA-B585-2D2CA3066ABC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B657A025-96E7-4EA5-A048-DEABFEE5BDD6}
