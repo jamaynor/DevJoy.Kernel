@@ -1,5 +1,4 @@
-﻿
-namespace DevJoy.Guard;
+﻿namespace DevJoy.GuardClause;
 
 public static class GuardAgainstNotFound
 {

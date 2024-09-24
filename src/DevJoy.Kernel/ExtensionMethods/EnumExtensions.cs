@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reflection;
 
-namespace DevJoy
+namespace DevJoy.ExtensionMethods
 {
     public static class EnumExtensions
     {

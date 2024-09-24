@@ -1,4 +1,4 @@
-﻿namespace DevJoy.Guard
+﻿namespace DevJoy.GuardClause
 {
     /// <summary>
     /// Simple interface to provide a generic mechanism to build guard clause extension methods from.

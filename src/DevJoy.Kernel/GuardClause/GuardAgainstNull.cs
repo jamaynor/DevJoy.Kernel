@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 
-namespace DevJoy.Guard;
+namespace DevJoy.GuardClause;
 
 
 public static class GuardAgainstNull
@@ -31,6 +31,23 @@ public static class GuardAgainstNull
             throw new ArgumentException(message ?? $"Required input {parameterName} was empty.", parameterName);
         }
     }
+    public static void NullOrEmpty(this IGuardClause guardClause, DateTimeOffset? input, string? message = null, [CallerArgumentExpression("input")] string? parameterName = null)
+    {
+        Guard.Against.Null(input, message, parameterName);
+        if (input == DateTimeOffset.MinValue)
+        {
+            throw new ArgumentException(message ?? $"Required input {parameterName} was empty.", parameterName);
+        }
+    }
+
+    public static void NullOrEmpty(this IGuardClause guardClause, DateTime? input, string? message = null, [CallerArgumentExpression("input")] string? parameterName = null)
+    {
+        Guard.Against.Null(input, message, parameterName);
+        if (input == DateTimeOffset.MinValue)
+        {
+            throw new ArgumentException(message ?? $"Required input {parameterName} was empty.", parameterName);
+        }
+    }
 
     public static void NullOrEmpty<T>(this IGuardClause guardClause, IEnumerable<T>? input, string? message = null, [CallerArgumentExpression("input")] string? parameterName = null)
     {
@@ -43,8 +60,7 @@ public static class GuardAgainstNull
     }
 
     public static void NullOrWhitespace(this IGuardClause guardClause, string? input, string? message = null, [CallerArgumentExpression("input")] string? parameterName = null)
-    {
-        Guard.Against.NullOrEmpty(input, message, parameterName);
+    {        
         if (string.IsNullOrWhiteSpace(input))
         {
             throw new ArgumentException(message ?? $"Required input {parameterName} was empty.", parameterName);
