@@ -12,3 +12,4 @@
 /src/DevJoy.Domain.Kernel/bin/Debug
 /src/DevJoy.Kernel/bin
 /src/DevJoy.Kernel/obj
+/test/DevJoy.Jernet.Test/obj/Debug/net8.0
