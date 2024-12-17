@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FA71FE48-BF7
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevJoy.Kernel", "src\DevJoy.Kernel\DevJoy.Kernel.csproj", "{7BE0A4CF-6190-4263-A702-332AD71125DA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "teset", "teset", "{A000FF8F-E4BB-44E6-A02B-8907DB61A97D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A000FF8F-E4BB-44E6-A02B-8907DB61A97D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
