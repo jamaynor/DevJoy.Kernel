@@ -13,3 +13,5 @@
 /src/DevJoy.Kernel/bin
 /src/DevJoy.Kernel/obj
 /test/DevJoy.Jernet.Test/obj/Debug/net8.0
+/test/DevJoy.Kernel.Test/bin/Release/net8.0
+/test/DevJoy.Kernel.Test/obj
