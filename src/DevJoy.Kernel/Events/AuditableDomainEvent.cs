@@ -1,14 +1,12 @@
-﻿using DevJoy.GuardClause;
-
-namespace DevJoy.Events
+﻿namespace DevJoy.Events
 {
     public record AuditableDomainEvent<TUserId> : IDomainEvent<TUserId>
     {
         public AuditableDomainEvent() { }
         public AuditableDomainEvent(TUserId createdBy, DateTimeOffset createdAt)
         {
-            Guard.Against.Default(createdBy, nameof(createdBy));
-            Guard.Against.Default(createdAt, nameof(createdAt));
+            if (createdBy == null) throw new ArgumentNullException(nameof(createdBy));
+            if (createdBy.Equals(default(TUserId))) throw new ArgumentException("CreatedBy cannot be default", nameof(createdBy));
 
             if (createdAt == DateTimeOffset.MaxValue
              || createdAt == DateTimeOffset.MinValue)

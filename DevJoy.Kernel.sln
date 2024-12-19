@@ -5,9 +5,14 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FA71FE48-BF71-42AA-B585-2D2CA3066ABC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevJoy.Kernel", "src\DevJoy.Kernel\DevJoy.Kernel.csproj", "{7BE0A4CF-6190-4263-A702-332AD71125DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevJoy.DDD", "src\DevJoy.Kernel\DevJoy.DDD.csproj", "{7BE0A4CF-6190-4263-A702-332AD71125DA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A000FF8F-E4BB-44E6-A02B-8907DB61A97D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "resources", "resources", "{A3161296-C6CE-4B5E-AE2A-24D44C21D55C}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
